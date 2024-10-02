@@ -1,0 +1,217 @@
+/* Carousel */
+.carousel {
+  width: 100%; /* Full width carousel */
+  margin: 0 auto; /* Center carousel */
+  overflow: hidden; /* Hide overflow */
+}
+
+.carousel-inner {
+  height: 500px; /* Height for carousel */
+}
+
+.carousel-item {
+  height: 100%; /* Full height for carousel items */
+  align-items: center; /* Center items vertically */
+  padding: 20px; /* Padding inside items */
+  margin-left: 150px; /* Margin for images */
+}
+
+.carousel-item img {
+  max-width: 50%; /* Image max width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin-left: 35px; /* Margin for images */
+  border-radius: 15px; /* Rounded corners */
+}
+
+#services-image {
+  width: auto; /* Ajusta este valor según sea necesario */
+  height: 50%; /* Mantiene la proporción de la imagen */
+  max-width: 800px; /* Ajusta el tamaño máximo de la imagen */
+}
+
+#services-text {
+  display: flex;
+  flex-direction: column; /* Alinea el texto verticalmente */
+  justify-content: flex-start; /* Alinea el contenido en la parte superior */
+  align-items: center; /* Centra el contenido horizontalmente */
+  text-align: center; /* Alinea el texto al centro */
+  height: 100%; /* Asegura que ocupe el alto completo de su contenedor */
+  margin-top: 125px; /* Ajusta este valor para mover el texto hacia abajo */
+}
+
+.carousel-item h5 {
+  color: #26b0a1; /* Title color */
+  font-size: 1.5rem; /* Title size */
+  margin-bottom: 10px; /* Space below title */
+  text-align:center
+}
+
+.carousel-item p {
+  color: #747474; /* Text color */
+  font-size: 1.2rem; /* Text size */
+  margin: 10px 0 20px; /* Margins for text */
+  text-align: center;
+}
+
+.carousel-item .btn {
+  width: 100%; /* Botón ocupa el ancho total */
+  padding: 15px; /* Espaciado interno para el botón */
+  font-size: 1.2rem; /* Aumentar el tamaño de la fuente */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #26b0a1; /* Fondo celeste */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Bordes redondeados para el círculo */
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Alto del botón */
+    display: flex; /* Para centrar el icono */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    position: absolute; /* Posición absoluta para colocar en el carrusel */
+    top: 50%; /* Mueve el botón hacia el centro verticalmente */
+    transform: translateY(-50%); /* Ajusta el centro del botón */
+    margin: 0 10px; /* Margen a la izquierda y derecha */
+}
+
+.carousel-control-prev {
+    left: 10px; /* Espacio desde la izquierda */
+}
+
+.carousel-control-next {
+    right: 10px; /* Espacio desde la derecha */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent; /* Sin fondo para el icono */
+    color: white; /* Color blanco para las flechas */
+    font-size: 1.5rem; /* Tamaño del icono */
+    padding: 5px; /* Espaciado interno */
+    border-radius: 50%; /* Bordes redondeados para las flechas */
+}
+
+/* Banner */
+.custom-div {
+  background-color: #d8dddc; /* Color de fondo */
+  margin: 20px 40px; /* Margen horizontal aumentado */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Centra el texto horizontalmente */
+  color: #26b0a1; /* Color del texto */
+  border-radius: 8px; /* Opcional: bordes redondeados */
+}
+
+.custom-div h5 {
+  margin-bottom: 15px; /* Espacio entre el título y el botón */
+  font-size: 1.5rem; /* Aumenta el tamaño de la fuente */
+  font-weight: bold; /* Hace el texto más prominente */
+}
+
+.btn-outline-primary {
+  border-color: #ffffff; /* Color del borde */
+  color: #ffffff; /* Color del texto */
+  background-color: #7c74b0; /* Fondo del botón */
+  padding: 15px 30px; /* Aumenta el espaciado interno del botón */
+  font-size: 1.3rem; /* Aumenta el tamaño de la fuente */
+}
+
+.btn-outline-primary:hover {
+  background-color: #7c74b0; /* Fondo en hover */
+  border-color: #7c74b0; /* Borde en hover */
+  color: #ffffff; /* Color del texto en hover */
+}
+
+/* Como trabajamos */
+body {
+  background-color: white; /* Fondo blanco */
+}
+
+.how-we-work {
+  text-align: center; /* Centra el texto del título */
+  margin: 50px; /* Espacio alrededor del bloque */
+}
+
+.how-we-work h2 {
+  color: #747474; /* Color del título */
+  font-size: 2.5rem; /* Tamaño grande del título */
+  margin-bottom: 30px; /* Espacio debajo del título */
+}
+
+.circle-container {
+  display: flex; /* Disposición en línea */
+  justify-content: space-around; /* Espaciado entre los rectángulos */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.rectangle {
+  background-color: #26b0a1; /* Color de fondo del rectángulo */
+  color: white; /* Color del texto en blanco */
+  border-radius: 15px; /* Bordes redondeados */
+  width: 300px; /* Ancho del rectángulo */
+  height: 150px; /* Alto del rectángulo */
+  display: flex; /* Flex para centrar el texto */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  font-size: 2rem; /* Tamaño de fuente más grande */
+  font-weight: bold; /* Texto en negrita */
+  margin: 0 5px; /* Espacio entre rectángulos reducido */
+  position: relative; /* Posicionamiento relativo para los círculos */
+}
+
+.circle-number {
+  background-color: #7c74b0; /* Color de fondo del círculo */
+  color: white; /* Color del texto dentro del círculo */
+  border-radius: 50%; /* Hace que el div sea circular */
+  width: 70px; /* Ancho del círculo */
+  height: 70px; /* Alto del círculo */
+  display: flex; /* Flex para centrar el texto */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  position: absolute; /* Posicionamiento absoluto */
+  top: -20px; /* Espacio desde arriba */
+  left: -20px; /* Espacio desde la izquierda */
+}
+
+/* Estilos para el div con la imagen de fondo */
+.background-container {
+  background-size: cover; /* La imagen cubre todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  width: 100%;
+  height: 500px; /* Altura del contenedor */
+  position: relative; /* Para colocar el cuadro dentro de este contenedor */
+}
+
+/* Estilos para el cuadro de texto encima de la imagen */
+.text-box {
+  background-color: white; /* Fondo blanco para el cuadro */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 25px;
+  width: 530px; /* Ancho del cuadro */
+  position: absolute;
+  top: 50%; /* Ajusta la posición del cuadro verticalmente */
+  left: 10%; /* Ajusta la posición del cuadro horizontalmente */
+  transform: translateY(-50%); /* Para centrar verticalmente */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar el cuadro */
+}
+
+/* Estilos para el título y texto del cuadro */
+.text-box h2 {
+  color: #26b0a1; /* Color del título */
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: bold; 
+
+}
+
+.text-box p {
+  color: #747474; /* Color del texto */
+  font-size: 1.2rem;
+}
+
+.text-box ul {
+  color: #747474; /* Color del texto */
+  font-size: 1.2rem;
+}

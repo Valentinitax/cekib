@@ -1,0 +1,108 @@
+/* Quienes Somos */
+.about-us {
+    background-color: white;
+    max-width: 1000px; /* Un máximo opcional para pantallas grandes */
+    padding: 10px; /* Espacio interno alrededor del contenido */
+    margin: 20px auto; /* Centrar el div horizontalmente */
+    text-align: center; /* Centrar texto dentro del div */
+}
+
+h2 {
+    color: #26b0a1; /* Color del título */
+    font-size: 2rem; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    text-align: center;
+}
+
+.quienes-somos, 
+.descripcion {
+    color: #747474; /* Color del texto */
+    font-size: 1rem; /* Tamaño del texto */
+    margin: 10px 0 20px; /* Márgenes para el texto */
+    text-align: center; /* Centrado del texto */
+}
+
+h3 {
+    color: #7c74b0; /* Color del subtítulo */
+    font-size: 1.2rem; /* Tamaño del subtítulo */
+    margin-bottom: 10px; /* Espacio debajo del subtítulo */
+    font-weight: bold; /* Hacer el texto en negrita */
+}
+
+.card-body h4 {
+    color: #333; /* Color del nombre (puedes ajustarlo según el diseño) */
+    font-size: 1.3rem; /* Tamaño del nombre */
+    margin-bottom: 5px; /* Espacio debajo del nombre */
+}
+
+.card-body {
+    background-color: #ffffff; /* Color de fondo para las tarjetas */
+    padding: 15px; /* Espacio interno de la tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio entre tarjetas */
+    text-align: center; /* Centra el texto dentro del cuerpo de la tarjeta */
+}
+
+
+/* Profesionales */
+.professionals {
+    text-align: center; /* Centra el título */
+    margin: 40px 0; /* Margen alrededor del div */
+}
+
+.card-container {
+    display: flex; /* Utiliza flexbox para la disposición de las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias líneas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 35px; /* Espacio entre las tarjetas */
+}
+
+.card {
+    width: 250px; /* Ancho fijo para todas las tarjetas */
+    height: 430px; /* Alto fijo para todas las tarjetas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra uniforme alrededor de cada tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que el contenido no sobresalga */
+    background-color: white; /* Color de fondo de la tarjeta */
+    display: flex; /* Permite el uso de flexbox para centrar contenido interno */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra horizontalmente el contenido de la tarjeta */
+    justify-content: space-between; /* Espacia el contenido verticalmente */
+}
+
+/* Primera fila: 2 cards */
+.card:nth-child(1),
+.card:nth-child(2) {
+    width: calc(50% - 200px); /* Dos tarjetas en la primera fila */
+}
+
+/* Segunda fila: 3 cards */
+.card:nth-child(3),
+.card:nth-child(4),
+.card:nth-child(5) {
+    width: calc(35% - 150px); /* Tres tarjetas en la segunda fila */
+}
+
+/* Tercera fila: 2 cards */
+.card:nth-child(6),
+.card:nth-child(7),
+.card:nth-child(8) {
+    width: calc(35% - 150px); /* Tres tarjetas en la segunda fila */
+}
+
+.card-img-top {
+    width: 180px; /* Ancho fijo para la imagen (puedes modificar este valor) */
+    height: 180px; /* Altura fija para que sea un círculo perfecto */
+    object-fit: cover; /* Cubre el área de la imagen sin distorsionar */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    margin-top: 10px; /* Espaciado superior para centrar la imagen dentro de la tarjeta */
+}
+
+
+.full-page-div {
+    width: 100%; /* Cubre todo el ancho de la página */
+    height: 150px; /* Altura fija de 500px */
+    background-color: white; /* Fondo blanco */
+    margin: 0; /* Sin margen externo */
+    padding: 0; /* Sin padding interno */
+}

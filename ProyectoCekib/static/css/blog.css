@@ -1,0 +1,69 @@
+.instagram-media {
+    background: #FFF;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+    margin: 1px;
+    max-width: 540px;
+    min-width: 326px;
+    padding: 0;
+    width: 99.375%;
+    width: -webkit-calc(100% - 2px);
+    width: calc(100% - 2px);
+}
+
+.instagram-container {
+    padding: 16px;
+}
+
+.instagram-link {
+    background: #FFFFFF;
+    line-height: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+.instagram-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.instagram-avatar {
+    width: 40px;
+    height: 40px;
+    background: gray; /* Placeholder color for avatar */
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.instagram-user-info {
+    flex: 1;
+}
+
+.instagram-username {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.instagram-caption {
+    color: #888;
+}
+
+.instagram-image-placeholder {
+    height: 200px; /* Adjust height as needed */
+    background: #eaeaea; /* Placeholder color for image */
+    margin: 16px 0;
+}
+
+.instagram-logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.instagram-logo {
+    fill: #000000; /* Logo color */
+}

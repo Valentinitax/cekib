@@ -1,0 +1,109 @@
+/* Contact Info */
+#contactinfo {
+  background-color: #d8dddc; /* Background color for header */
+  text-align: center; /* Center text alignment */
+  padding: 15px; /* Additional space around the header */
+}
+
+.contact-info {
+  font-size: 10pt;
+}
+
+.contact-info a {
+  color: #26b0a1; /* Custom color for links */
+  text-decoration: none; /* No underline for links */
+}
+
+.contact-info a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+#Logo {
+  width: 150px; /* Logo size */
+  height: auto; /* Maintain logo proportion */
+}
+
+.header-text {
+  color: black;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  background-color: #FFFFFF; /* Lighter color for visibility */
+  padding: 1rem 2rem; /* Increased padding */
+  z-index: 1000; /* Ensure it’s above other elements */
+  top: 0; /* Sticks to the top of the viewport */
+  width: 100%; /* Make sure it spans the width */
+}
+
+.navbar .nav-link {
+  color: #747474; /* Default link color */
+}
+
+.navbar .nav-link:hover,
+.nav-item.active .nav-link {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.nav-item.active .nav-link {
+  color: #26b0a1; /* Active link color */
+  font-weight: bold; /* Bold for active link */
+}
+
+/* Button Styles */
+
+.btn-primary {
+  background-color: #26b0a1; /* Button background color */
+  border-color: #26b0a1; /* Button border color */
+  color: #ffffff; /* Button text color */
+}
+
+.btn-primary:hover {
+  background-color: #26b0a1; /* Background on hover */
+  border-color: #26b0a1; /* Border on hover */
+}
+
+.btn-secondary {
+  background-color: #7c74b0; /* Button background color */
+  border-color: #7c74b0; /* Button border color */
+  color: #ffffff; /* Button text color */
+}
+
+.btn-secondary:hover {
+  background-color: #7c74b0; /* Background on hover */
+  border-color: #7c74b0; /* Border on hover */
+}
+
+/* Iconos */
+
+.iconos {
+  display: flex; /* Para que los íconos estén en una fila */
+  justify-content: center; /* Centrar los íconos horizontalmente */
+  align-items: center; /* Alinearlos verticalmente */
+  gap: 20px; /* Espacio entre cada ícono */
+}
+
+.iconos i {
+  color: #26b0a1; /* Color personalizado */
+  transition: transform 0.3s ease, color 0.3s ease; /* Suavizar la transición al hacer hover */
+}
+
+.iconos i:hover {
+  color: #26b0a1; /* Cambiar el color al hacer hover */
+  transform: scale(1.1); /* Agrandar un poco al hacer hover */
+}
+
+.sticky-container {
+    position: sticky; /* Hacer el contenedor sticky */
+    top: 0; /* Pegado a la parte superior de la página */
+    z-index: 1050; /* Asegurarse de que esté por encima de otros elementos */
+    background-color: white; /* Fondo blanco para el contenedor */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar la navbar */
+}
+
+/* Asegúrate de que la navbar tenga un fondo blanco */
+.navbar {
+    background-color: white; /* Fondo blanco para la navbar */
+}
+

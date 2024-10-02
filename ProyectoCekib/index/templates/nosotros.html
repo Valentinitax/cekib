@@ -1,0 +1,244 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+
+    <!-- Web Title -->
+    <title>Centro Kinésico Integral - CEKIB</title>
+
+    <!-- Fonts and Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nosotros.css' %}">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <div class="sticky-container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <img id="Logo" src="{% static 'img/logo.png' %}" alt="Centro Kinésico Integral Logo">
+                </a>
+                <div class="collapse navbar-collapse d-flex justify-content-between align-items-center" id="navbarText">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}">Inicio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{% url 'nosotros' %}">¿Quiénes Somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'servicios' %}">Nuestros Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button id="Agendar" type="button" class="btn btn-primary me-2">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                                </svg>
+                                Agendar hora
+                            </div>
+                        </button>    
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <!-- Contact Info -->
+        <div id="contactinfo">
+            <div class="ast-builder-grid-row ast-grid-center-col-layout-only ast-flex ast-grid-center-col-layout">
+                <div class="site-header-above-section-center site-header-section ast-flex ast-grid-section-center">
+                    <div class="ast-builder-layout-element ast-flex site-header-focus-item ast-header-html-1" data-section="section-hb-html-1">
+                        <div class="ast-header-html inner-link-style-">
+                            <div class="ast-builder-html-element">
+                                <p class="header-text">
+                                    <span class="contact-info">
+                                        📍 Profesora Julieta Valenzuela 602, Buin | 📅 Lunes a Viernes de 9:00 a 19:00<br>
+                                        📞 Contacto <b><a href="tel:+56945971970">+56 9 4597 1970</a></b> | 
+                                        📧 Correo: <b><a href="mailto:cekib.cl@gmail.com">cekib.cl@gmail.com</a></b><br>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Quienes Somos -->
+        <div class="about-us">
+            <h2>¿Quiénes somos?</h2> 
+            <p class="quienes-somos">El Centro Kinésico Integral (Cekib), fundado en noviembre de 2019 por las profesionales Tiare y Jessamine Castro, 
+                ha evolucionado de un simple centro kinésico a un destacado espacio interdisciplinario. 
+                Contamos con un equipo de kinesiólogos especializados en diversas áreas, como kinesiología músculo-esquelética y 
+                respiratoria, complementado por una nutricionista clínica y una terapeuta ocupacional.
+                <br><br>Atendemos a pacientes de todas las edades, brindando un enfoque personalizado que promueve la salud y 
+                el bienestar integral.</p>
+            <h3>¡Tu bienestar es nuestra prioridad!</h3>
+        </div>
+        
+        <!-- Profesionales -->
+        <br>
+        <div class="profesionales">
+            <h2>Nuestros Profesionales</h2><br>
+            <div class="card-container">
+                <div class="card">
+                    <img src="{% static 'img/prof1.jpg' %}" alt="Profesional 1" class="card-img-top">
+                    <div class="card-body">
+                        <h4>Tiare Castro Correa</h4>
+                        <h3>Co-fundadora | Kinesióloga</h3>
+                        <p>Especialista en kinesiología músculo-esquelética y neurológica en adultos. 
+                            Con 6 años de experiencia clínica y formación en cursos de dolor, 
+                            Tiare también es docente en la Universidad Católica Silva Henríquez.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/prof2.jpg' %}" alt="Profesional 2" class="card-img-top">
+                    <div class="card-body">
+                        <h4>Jessamine Castro Novoa</h4>
+                        <h3>Co-fundadora | Kinesióloga</h3>
+                        <p>Especialista en kinesiología músculo-esquelética y neurológica infantil, 
+                            con 4 años de experiencia clínica. Jessamine tiene formación en punción seca, 
+                            atención temprana y desarrollo psicomotor. Además realiza la supervición y docencia clínica
+                            de estudiantes de la Universidad Católica Silva Henríquez.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/prof3.jpg' %}" alt="Profesional 3" class="card-img-top">
+                    <div class="card-body">
+                        <h4>Daniela Baeza C.</h4>
+                        <h3>Masoterapeuta</h3>
+                        <p>Especialista en masajes terapéuticos, con 3 años de experiencia clínica.
+                            Enfocada en el manejo del dolor agudo y persistente.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/prof4.jpg' %}" alt="Profesional 4" class="card-img-top">
+                    <div class="card-body">
+                        <h4>Dagmar Vallejos Silva</h4>
+                        <h3>Nutricionista</h3>
+                        <p>Con un enfoque integral y no pesocentrista, Dágmar tiene 3 años de experiencia en nutrición vegetariana, 
+                            salud intestinal y cirugía bariátrica. Su objetivo es guiar a los pacientes hacia una alimentación saludable 
+                            sin prohibiciones.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/prof5.jpg' %}" alt="Profesional 5" class="card-img-top">
+                    <div class="card-body">
+                        <h4>Fabiola Madrid Rojas</h4>
+                        <h3>Terapeuta Ocupacional</h3>
+                        <p>Especializada en la atención de niños, niñas y adolescentes, Fabiola trabaja para potenciar habilidades y 
+                            mejorar la calidad de vida mediante estrategias personalizadas. Cuenta con formación en integración sensorial 
+                            y neurodesarrollo, y le apasiona trabajar con niños con TDAH y TEA. 
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/prof6.jpg' %}" alt="Profesional 6" class="card-img-top">
+                    <div class="card-body">
+                        <h4>Karen Espinoza Chavez</h4>
+                        <h3>Kinesióloga</h3>
+                        <p>Especialista en kinesiología respiratoria y piso pélvico, con 7 años de experiencia. 
+                            Tiene formación en infecciones respiratorias agudas y un diplomado en kinesiología pélvica 
+                            y uroginecología funcional.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/prof7.jpg' %}" alt="Profesional 7" class="card-img-top">
+                    <div class="card-body">
+                        <h4>Nicolás Rivas Soto</h4>
+                        <h3>Kinesiólogo</h3>
+                        <p>Egresado de la Universidad Católica Silva Henríquez, Nicolás se especializa en kinesiología músculo-esquelética, 
+                            cardiorrespiratoria pediátrica y neurología en adultos mayores. 
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/prof8.jpg' %}" alt="Profesional 8" class="card-img-top">
+                    <div class="card-body">
+                        <h4>Johana Sépulveda Neipan</h4>
+                        <h3>Kinesióloga</h3>
+                        <p>Especialista en kinesiología respiratoria y piso pélvico, con 6 años de experiencia. 
+                            Participa en las Campañas de Invierno de Pudahuel, y ha realizado un diplomado en 
+                            Kinesiología de Piso Pélvico y Uroginecología Funcional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Espacio-->
+        <div class="full-page-div">
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer">
+            <div class="row">
+                <div id="contactinfo">
+                    <div class="ast-builder-grid-row ast-grid-center-col-layout-only ast-flex ast-grid-center-col-layout">
+                        <div class="site-header-above-section-center site-header-section ast-flex ast-grid-section-center">
+                            <div class="ast-builder-layout-element ast-flex site-header-focus-item ast-header-html-1" data-section="section-hb-html-1">
+                                <div class="ast-header-html inner-link-style-">
+                                    <div class="ast-builder-html-element">
+                                        <a class="navbar-brand" href="{% url 'home' %}">
+                                            <img id="Logo" src="{% static 'img/logot.png' %}" alt="Centro Kinésico Integral Logo">
+                                        </a>
+                                        <br>
+                                        <p class="header-text">
+                                            <br>
+                                            <span class="contact-info">
+                                                📍 Profesora Julieta Valenzuela 602, Buin | 📅 Lunes a Viernes de 9:00 a 19:00<br>
+                                                📞 Contacto <b><a href="tel:+56945971970">+56 9 4597 1970</a></b> | 
+                                                📧 Correo: <b><a href="mailto:cekib.cl@gmail.com">cekib.cl@gmail.com</a></b><br>
+                                            </span>
+                                            <br>
+                                        </p>
+                                        <div class="iconos">
+                                            <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                                            <i class="fa-brands fa-square-facebook fa-2xl"></i>
+                                            <i class="fa-brands fa-instagram fa-2xl"></i><br>
+                                        </div>
+                                        <br><br>
+                                        <p class="header-text">
+                                            <span class="contact-info">
+                                                <br>© 2024 Centro Kinésico Integral de Buin. Todos los derechos reservados.<br>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+.location-container {
+    display: flex; /* Disposición horizontal de los elementos */
+    justify-content: space-between; /* Espaciado entre el mapa y la información */
+    align-items: flex-start; /* Alinear elementos al principio */
+    margin: 20px; /* Espaciado alrededor del contenedor */
+}
+
+.map-section {
+    flex: 1; /* Permite que el mapa ocupe el espacio disponible */
+    margin-left: 70px; /* Espaciado a la izquierda del mapa */
+}
+
+.map-title, .info-title, .contact-title {
+    font-size: 1.8rem; /* Tamaño del título de la información */
+    color: #26b0a1; /* Color del título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.google-map {
+    max-width: 75%; /* Asegúrate de que el mapa no se desborde */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+.info-section {
+    flex: 1; /* Permite que la sección de información ocupe el espacio disponible */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    flex-direction: column; /* Disposición vertical */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    background-color: #f9f9f9; /* Fondo suave */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    max-width: 600px; /* Ancho máximo del div */
+    margin: 150px auto; /* Centrar horizontalmente con margen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centrar texto */
+    margin-right: 70px; 
+}
+
+.info-description {
+    color: #747474; /* Color del texto */
+    font-size: 1.2rem; /* Tamaño del texto */
+}
+
+.contact-info {
+    width: 100%; /* Asegurar que ocupe todo el ancho disponible */
+}
+
+.contact-item {
+    display: flex; /* Usar flexbox para alinear icono y texto */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    margin: 10px 0; /* Espacio vertical entre items */
+}
+
+.icon {
+    margin-right: 10px; /* Espacio a la derecha del icono */
+    font-size: 1.5rem; /* Tamaño del icono */
+    color: #26b0a1; /* Color del icono */
+}
+
+.contact-item span {
+    color: #747474; /* Color del texto */
+    font-size: 1.1rem; /* Tamaño del texto */
+}
+
+#WhatApp {
+    padding: 15px 25px; /* Aumenta el relleno para agrandar el botón */
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #25D366; /* Color verde de WhatsApp */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+#WhatApp:hover {
+    background-color: #1DA74E; /* Color de fondo al pasar el ratón */
+}
+
+#WhatApp i {
+    font-size: 24px; /* Aumenta el tamaño del icono */
+}
